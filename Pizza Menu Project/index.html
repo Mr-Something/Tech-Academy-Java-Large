@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Order online!</title>
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		
+		<div type="container">
+			<h1>IT'S PIZZA TIME</h1>
+		</div>
+		
+		<br>
+		<form id="pizzaform">
+			<div class="container">
+				<h3>Choose your size:</h3>
+				<input type="radio" class="size" name="size" checked="checked" value="Personal">Personal ($6.00)</input>
+				<input type="radio" class="size" name="size" value="Medium">Medium ($10.00)</input>
+				<input type="radio" class="size" name="size" value="Large">Large ($14.00)</input>
+				<input type="radio" class="size" name="size" value="Extra Large">Extra Large ($16.00)</input>
+				
+				<br>
+				<br>
+				
+				<h3>Cheese options:</h3>
+				<input type="radio" class="cheese" name="cheese" checked="checked" value="Regular">Regular</input>
+				<input type="radio" class="cheese" name="cheese" value="No Cheese">No Cheese</input>
+				<input type="radio" class="cheese" name="cheese" value="Extra Cheese">Extra Cheese (+ $3.00)</input>
+				
+				<br>
+				<br>
+				
+				<h3>Choose your crust:</h3>
+				<input type="radio" class="crust" name="crust" checked="checked" id="crust" value="Plain Crust">Plain Crust</input>
+				<input type="radio" class="crust" name="crust" id="crust" value="Garlic Butter Crust">Garlic Butter Crust</input>
+				<input type="radio" class="crust" name="crust" id="crust" value="Spicy Crust">Spicy Crust</input>
+				<input type="radio" class="crust" name="crust" id="crust" value="House Special Crust">House Special Crust</input>
+				<input type="radio" class="crust" name="crust" id="crust" value="Cheese Stuffed Crust">Cheese Stuffed Crust (+ $3.00)</input>
+				
+				<br>
+				<br>
+				
+				<h3>Choose your sauce:</h3>
+				<input type="radio" class="sauce" name="sauce" checked="checked" value="Marinara">Marinara</input>
+				<input type="radio" class="sauce" name="sauce" value="White Sauce">White Sauce</input>
+				<input type="radio" class="sauce" name="sauce" value="Barbeque">Barbeque</input>
+				<input type="radio" class="sauce" name="sauce" value="No Sauce">No Sauce</input>
+				
+				<br>
+				<br>
+				
+				<h3>Choose your toppings:</h3>
+				
+				<h4>Veggies (one complimentary veggie ingredient, $1.00 for any additional ingredients)</h4>
+				<input type="checkbox" class="veggies" name="veggie" value="Tomatoes">Tomatoes</input>
+				<input type="checkbox" class="veggies" name="veggie" value="Onions">Onions</input>
+				<input type="checkbox" class="veggies" name="veggie" value="Olives">Olives</input>
+				<input type="checkbox" class="veggies" name="veggie" value="Green Peppers">Green Peppers</input>
+				<input type="checkbox" class="veggies" name="veggie" value="Mushrooms">Mushrooms</input>
+				<input type="checkbox" class="veggies" name="veggie" value="Pineapple">Pineapple</input>
+				<input type="checkbox" class="veggies" name="veggie" value="Spinach">Spinach</input>
+				<input type="checkbox" class="veggies" name="veggie" value="Jalapeno">Jalapeno</input>
+				
+				<h4>Meats (one complimentary meat ingredient, $1.00 for any additional ingredients)</h4>
+				<input type="checkbox" class="meats" name="meats" value="Pepperoni">Pepperoni</input>
+				<input type="checkbox" class="meats" name="meats" value="Sausage">Sausage</input>
+				<input type="checkbox" class="meats" name="meats" value="Canadian Bacon">Canadian Bacon</input>
+				<input type="checkbox" class="meats" name="meats" value="Ground Beef">Ground Beef</input>
+				<input type="checkbox" class="meats" name="meats" value="Anchovy">Anchovy</input>
+				<input type="checkbox" class="meats" name="meats" value="Chicken">Chicken</input>
+			</div>
+		</form>
+			<br>
+			<br>
+			<br>
+			
+			<script src="./js/pizza_menu.js"></script>
+			<script>
+				function clearForm() {
+				document.getElementById('pizzaform').reset();
+				};
+			</script>
+			
+			
+			<div class="Container">
+				<button type="button" onclick="getReceipt()">Submit Order</button>
+				<button type="button" onclick="clearForm()">Cancel</button>
+			</div>
+		<div id="cart">
+			<div id="showText"></div>
+			<div id="totalPrice"></div>
+		</div>
+		
+		
+	
+	</body>
+</html>
